@@ -1,0 +1,20 @@
+name: Firebase Deploy
+# run when code enters main branch
+on:
+  push:
+    branches: [main]
+    
+# You need to get a firebase service account key (Project Settings > Service Accounts) and make sure it has the "hosting admin" roll 
+
+jobs:
+  Firebase-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Hosting
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy
+        env:
+          GCP_SA_KEY: ${{ secrets.DEPLOY_GCP_SA_KEY }}
+          PROJECT_PATH: ./public
+          PROJECT_ID: eric-topics
