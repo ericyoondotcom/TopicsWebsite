@@ -24,3 +24,18 @@ body {
 #subheader {
     font-size: 2vh;
 }
+
+
+#red {
+    background-color: magenta;
+}
+#green {
+    background-color: yellow;
+}
+#blue {
+    background-color: cyan;
+}
+
+#bing-chilling {
+    box-shadow: 0 0 10px 10px #FF00FFAA;
+}

@@ -18,3 +18,17 @@ body {
 #subheader {
     font-size: 2vh;
 }
+
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+
+#bing-chilling {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
